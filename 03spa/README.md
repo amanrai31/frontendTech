@@ -15,3 +15,25 @@ Instead of fetching a new HTML page on every click, SPAs modify the DOM dynamica
 
 - The app uses a Router (like Angular Router or React Router).
 - When the user navigates, the URL changes but the page does not reload, router dynamically loads the required components (like DashboardComponent ProfileComponent)
+
+3. Fetching Data Asynchronously
+- The frontend makes API requests (GET /api/dashboard)
+- The backend responds with JSON data
+- The frontend updates only the required UI elements
+
+4. State Management (Optional)
+- Instead of making frequent API calls, SPAs can store data in memory (Redux, NgRx, Context API)
+
+5. Final Rendering & Interactions
+- The app updates the DOM and shows new data instantly
+- User interactions trigger events that update only specific sections of the page. (using V-DOM in react or change detection in angular)
+
+## Need of SPA
+
+-Faster load times(only required section get updated, not whole page), smooth navigation like desktop app, reduce server load(only json data is fetched saving bandwidth)
+
+## Downsides
+
+- SEO issue (solutions: SSR, prerendering)
+- Initial load time.
+- SPA rely on JS heavily making xss attacks possible.

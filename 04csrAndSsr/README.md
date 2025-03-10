@@ -43,7 +43,7 @@ Angular universal => SSR for Angular
 1. Slower response times – If API calls are slow, users will have to wait.
 2. Higher server load – Every request triggers a new render.
 
-#### Solution
+#### Solution (Best practices)
 
 1. Use caching (redis(memory caching) or nextJS built-in caching(Incremental static regeneration))
 2. use hybrid rendering i.e. use SSR only when there is fetching of data involved(for user-specific content), use CSR for pages that don't change often.
@@ -62,3 +62,10 @@ export async function getServerSideProps() {
 }
 
 ```
+
+## Hydration
+
+Once the server sends the pre-rendered HTML, the browser loads React(attach event listeners) and makes the page interactive. This process is called hydration.
+
+**NOTE :** If page has lot of interactivity, hydration is slow and competes with other task making page laggy. We can use lazy hydration or can use Streaming SSR (<suspense fallback={Loading/}><Post/></Suspense>).
+
