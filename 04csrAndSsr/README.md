@@ -69,3 +69,9 @@ Once the server sends the pre-rendered HTML, the browser loads React(attach even
 
 **NOTE :** If page has lot of interactivity, hydration is slow and competes with other task making page laggy. We can use lazy hydration or can use Streaming SSR (<suspense fallback={Loading/}><Post/></Suspense>).
 
+## JSX and SSR
+
+1. JSX is compiled to JavaScript (React.createElement)
+2. React converts JSX to pure HTML (renderToString()) (on server)
+3. The server sends HTML to the browser
+4. React hydrates the page, making it interactive
