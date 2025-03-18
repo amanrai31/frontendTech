@@ -7,3 +7,7 @@
 5. async-await, promise/then, observable/subscribe
 6. Testing & debugging
 7. State management (redux, zustand, NgRx)
+
+
+
+**ROADMAP -** [https://roadmap.sh/frontend]
