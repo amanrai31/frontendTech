@@ -37,3 +37,7 @@ Instead of fetching a new HTML page on every click, SPAs modify the DOM dynamica
 - SEO issue (solutions: SSR, prerendering)
 - Initial load time.
 - SPA rely on JS heavily making xss attacks possible.
+
+**NOTE :** In SPA we have only one standalone/real HTML file i.e index.html, apart from that we have multiple components/templates. Browser dynamically loads other pages based on current route.
+
+**NOTE :** In plain,traditional web-dev before SPA, each page of website was seperate HTML file (index.html, about.html,contact.html), when user click on html element/link browser would load entire new page making reqest to server. 
