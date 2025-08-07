@@ -24,3 +24,10 @@ Machine coding - [https://www.youtube.com/watch?v=MrJ8gjQBwr4&list=PLlasXeu85E9c
 
 
 What happens when we do `npm i` => reads pakage.json and install all dependencies and dev-dependencies mentioned in it. Dependencies will be part of build but dev-dependencies are for devlopment only.
+
+
+-----
+
+# QESTIONS
+
+- You are given a json, using that JSON create a folder structure like VSCode
